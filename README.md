@@ -1,17 +1,17 @@
 # @kreozot/eslint-config
 
-За основу взят [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript),
-а [точнее его адаптация под TypeScript](https://www.npmjs.com/package/eslint-config-airbnb-typescript).
+Based on [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript),
+more specific on [TypeScript adaptation](https://www.npmjs.com/package/eslint-config-airbnb-typescript).
 
-## Использование с TypeScript и React
+## Usage with TypeScript + React
 
-Установка конфига со всеми необходимыми зависимостями (включая ESLint и TypeScript):
+Installation with all required dependencies (including ESLint and TypeScript):
 
 ```
 npm i --save-dev @kreozot/eslint-config @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint typescript eslint-config-airbnb eslint-config-airbnb-typescript eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-hooks
 ```
 
-Конфигурация ESLint в проекте:
+Project ESLint configuration example:
 
 ```json
 {
@@ -25,15 +25,15 @@ npm i --save-dev @kreozot/eslint-config @typescript-eslint/eslint-plugin @typesc
 ```
 
 
-## Использование с TypeScript без React
+## Usage with TypeScript
 
-Установка конфига со всеми необходимыми зависимостями (включая ESLint):
+Installation with all required dependencies (including ESLint):
 
 ```
 npm i --save-dev @kreozot/eslint-config @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint typescript eslint-config-airbnb eslint-config-airbnb-typescript eslint-plugin-import
 ```
 
-Конфигурация ESLint в проекте:
+Project ESLint configuration example:
 
 ```json
 {
@@ -47,20 +47,20 @@ npm i --save-dev @kreozot/eslint-config @typescript-eslint/eslint-plugin @typesc
 ```
 
 
-## Использование с JavaScript
+## Usage with JavaScript
 
-Установка конфига со всеми необходимыми зависимостями (включая ESLint):
+Installation with all required dependencies (including ESLint):
 
 ```
 npm i --save-dev @kreozot/eslint-config eslint eslint-config-airbnb-base eslint-plugin-import
 ```
 
-Конфигурация ESLint в проекте:
+Project ESLint configuration example:
 
 ```json
 {
   "extends": [
-    "@kreozot/eslint-config/ts"
+    "@kreozot/eslint-config/js"
   ],
   "parserOptions": {
     "project": "./tsconfig.json"
@@ -68,12 +68,11 @@ npm i --save-dev @kreozot/eslint-config eslint eslint-config-airbnb-base eslint-
 }
 ```
 
+## Project structure
 
-## Структура проекта
-
-* **overrides** - Переопределения общих правил
-* **overrides-ts** - Переопределения правил для TypeScript
-* **overrides-react** - Переопределения правил для React
-* **js.js** - Входная точка для правил JavaScript
-* **ts.js** - Входная точка для правил TypeScript
-* **ts-react.js** - Входная точка для правил TypeScript + React
+* **overrides** - Common rules overrides
+* **overrides-ts** - Rules overrides for TypeScript
+* **overrides-react** - Rules overrides for React
+* **js.js** - Config entry point for JavaScript
+* **ts.js** - Config entry point for TypeScript
+* **ts-react.js** - Config entry point for TypeScript + React
