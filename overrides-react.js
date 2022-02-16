@@ -1,14 +1,14 @@
 module.exports = {
-  // Потому что для props используется TypeScript
+  // Disable propTypes in favor of TypeScript types
   "react/prop-types": "off",
-  // Разрешение привязывать label и по id и по вложенности
+  // Allow binding label tags by both id and parenting
   "jsx-a11y/label-has-associated-control": [
     "error",
     {
       assert: "either",
     },
   ],
-  // Более чистое и лаконичное написание функциональных React-компонентов
+  // For consistency and simplicity
   "react/function-component-definition": [
     "error",
     {
@@ -16,12 +16,12 @@ module.exports = {
       unnamedComponents: "arrow-function",
     },
   ],
-  // eslint --fix в некоторых случаях некорректно заменяет, и теряются пробелы
+  // eslint --fix can break some code otherwise (removing spaces in text with tags)
   "react/jsx-one-expression-per-line": "off",
-  // Вместо defaultProps используются default values в деструкторах props
+  // Disable defaultProps in favor of default values in props
   "react/require-default-props": "off",
-  // Отключение обязательного объявления React при использовании JSX
+  // There is no need to import react package in React 17
   "react/react-in-jsx-scope": "off",
-  // Включение no-unused-imports для React
+  // Enable no-unused-imports warning for react package
   "react/jsx-uses-react": "off",
 };

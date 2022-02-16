@@ -1,7 +1,7 @@
 module.exports = {
-  // Иначе функции становятся менее читаемыми (если возвращают сложные конструкции)
+  // Arrow functions with immediate return can be wrapped with body for better code reading experience
   'arrow-body-style': 'off',
-  // Чтобы не прибегать к костылям стиля только ради соблюдения этого ограничения
+  // Less aggressive max-len rule
   'max-len': ['error', {
     code: 120,
     ignoreUrls: true,
@@ -11,23 +11,14 @@ module.exports = {
     ignoreComments: false,
     ignorePattern: '^\\s*\/\/ eslint-',
   }],
-  // Чтобы обеспечить консистентность наименований переменных при импорте
+  // You can prefer standard export to provide consistency
   'import/prefer-default-export': 'off',
-  // В связи с усложнением кода
-  'consistent-return': 'off',
-  // Для обеспечения консистентности внешнего вида блоков (и удобства модификации кода внутри них)
+  // For consistency (and better code modification experience in functions)
   'brace-style': [
     'error',
     '1tbs',
     {
       'allowSingleLine': false
-    }
-  ],
-  // Отключаем инкремент по ++, но разрешаем его в теле циклов
-  'no-plusplus': [
-    'error',
-    {
-      'allowForLoopAfterthoughts': true
     }
   ],
 };
