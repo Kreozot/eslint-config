@@ -1,6 +1,6 @@
 {
   "name": "@kreozot/eslint-config",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Kreozot ESLint config",
   "main": "ts-react.js",
   "keywords": [],

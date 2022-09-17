@@ -21,4 +21,15 @@ module.exports = {
       'allowSingleLine': false
     }
   ],
+  // Comma dangle only on multiline except functions
+  "comma-dangle": [
+    "error",
+    {
+      "arrays": "only-multiline",
+      "objects": "only-multiline",
+      "imports": "only-multiline",
+      "exports": "only-multiline",
+      "functions": "never"
+    }
+  ],
 };

@@ -24,4 +24,11 @@ module.exports = {
   "react/react-in-jsx-scope": "off",
   // Enable no-unused-imports warning for react package
   "react/jsx-uses-react": "off",
+  // Allow to use string inside fragment (for TS type consistency)
+  "react/jsx-no-useless-fragment": [
+    "error",
+    {
+      "allowExpressions": true
+    }
+  ]
 };
