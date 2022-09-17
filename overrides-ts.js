@@ -19,7 +19,8 @@ module.exports = {
     {
       "ignoredNodes": [
         "TSTypeParameterInstantiation",
-        "TSIntersectionType"
+        "TSIntersectionType",
+        "TSUnionType"
       ]
     }
   ]

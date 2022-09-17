@@ -1,5 +1,7 @@
 # @kreozot/eslint-config
 
+[![npm version](https://badge.fury.io/js/@kreozot%2Feslint-config.svg)](https://badge.fury.io/js/@kreozot%2Feslint-config)
+
 Structured shareable ESLint-config with custom rules overrides for JS, TS and TS+React projects.
 
 Based on [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript),
