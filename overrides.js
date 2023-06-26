@@ -32,4 +32,6 @@ module.exports = {
       "functions": "never"
     }
   ],
+  // To not break consistency only because of "this" presence
+  "class-methods-use-this": "off",
 };

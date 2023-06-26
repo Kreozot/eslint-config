@@ -34,5 +34,5 @@ module.exports = {
       "exports": "only-multiline",
       "functions": "never"
     }
-  ],
+  ]
 };
